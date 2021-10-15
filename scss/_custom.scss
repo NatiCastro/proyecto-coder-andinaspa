@@ -1,0 +1,45 @@
+//Variables color mías
+$color-1: #a69c80;
+$color-2: #59310e;
+$color-3: #f2e3d5;
+$color-4: #262321;
+$color-5: #d9d5d2;
+$color-6: #d99d55;
+$color-7: #d9bfa0;
+$color-8: #8c6b4f;
+$color-9: #403429;
+
+//Variable color sass
+$primary: #d99f6c;
+$danger: #ff4136;
+
+//Map
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+);
+
+// Create your own map
+$custom-colors: (
+  "custom-color": $color-8,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//accordion style
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+$accordion-color: $color-9;
+$accordion-button-active-color: shade-color($color-1, 10%);
+$accordion-icon-color: $color-8;
+$accordion-icon-active-color: $color-2;
+
+//carousel style
+$h5-font-size: 3rem;
+
+// Custom.scss
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here

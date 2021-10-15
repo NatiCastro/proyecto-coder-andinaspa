@@ -1,0 +1,65 @@
+$color-1: #a69c80;
+$color-2: #59310e;
+$color-3: #f2e3d5;
+$color-4: #262321;
+$color-5: #d9d5d2;
+$color-6: #d99d55;
+$color-7: #d9bfa0;
+$color-8: #8c6b4f;
+$color-9: #403429;
+$color-principal: rgb(247, 214, 117);
+$color-principal-oscuro: rgb(175, 148, 48);
+$color-arena: #9b8865;
+$color-piel: rgb(224, 202, 185);
+$color-piel-claro: rgb(253, 240, 213);
+$gris-oscuro: rgb(54, 50, 50);
+$gris-claro: rgb(95, 90, 90);
+
+$f-size-f: 1rem; //Ejemplo en footer multiplicación, y en navbar de suma y resta
+
+.footer {
+  &__container {
+    width: 100%;
+    margin: 0;
+    max-width: 1400px;
+    background-color: $gris-oscuro;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  &__links {
+    margin-top: 1rem;
+    margin-right: 1.6rem;
+    font-size: 1.8rem;
+    color: $color-6;
+    text-decoration: none;
+    transition: 1s;
+  }
+  &__links:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    opacity: 1;
+    color: $primary;
+  }
+
+  &__container--copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-3;
+  }
+  &__container--copyright h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    font-variant: small-caps;
+    letter-spacing: 0.1rem;
+  }
+}
+.error__link {
+  color: $color-2;
+  font-size: 1.2rem;
+}

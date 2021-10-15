@@ -1,0 +1,24 @@
+/* Galeria1 */
+
+.card {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.card-title {
+  font-size: 2rem;
+}
+.img-item {
+  height: 26rem;
+}
+.button-discover {
+  text-decoration: none;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  background-color: #d99f6c;
+  color: white;
+  border-radius: 5px;
+}
+.button-discover:hover {
+  color: antiquewhite;
+  opacity: 0.9;
+  transition: 0.3s;
+}

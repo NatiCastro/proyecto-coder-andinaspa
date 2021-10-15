@@ -1,0 +1,126 @@
+$color-principal: rgb(247, 214, 117);
+$color-principal-oscuro: rgb(175, 148, 48);
+$color-arena: #9b8865;
+$color-piel: rgb(224, 202, 185);
+$color-piel-claro: rgb(253, 240, 213);
+$gris-oscuro: rgb(54, 50, 50);
+$gris-claro: rgb(95, 90, 90);
+
+$color-1: #a69c80;
+$color-2: #59310e;
+$color-3: #f2e3d5;
+$color-4: #262321;
+$color-5: #d9d5d2;
+$color-6: #d99d55;
+$color-7: #d9bfa0;
+$color-8: #8c6b4f;
+$color-9: #403429;
+
+.form {
+  &__title {
+    margin: 3.5rem 0 0 0;
+    padding: 0.4rem;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    background-color: $color-8;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-name: aparecer2;
+    letter-spacing: 0.2rem;
+  }
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    padding: 1rem;
+    border: 2px solid $color-7;
+  }
+  &__fields legend {
+    color: $color-6;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__fields label {
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  &__input {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1.4px solid rgb(201, 196, 196);
+    transition: all 1s;
+  }
+  &__input:focus {
+    width: 300px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 1.6px solid $color-6;
+  }
+  &__title--sucursal {
+    margin: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  &__input--sucursal {
+    @extend .form__input; //Ejemplo de extend
+    margin: 0.5rem;
+    padding: 5px;
+    width: 200px;
+    height: 35px;
+  }
+  &__text--politica {
+    margin: 0.5rem;
+    font-weight: lighter;
+  }
+  &__input--textarea {
+    width: 21rem;
+    height: 250px;
+    outline: none;
+    border: 1.4px solid rgb(201, 196, 196);
+    border-radius: 10px;
+  }
+}
+
+#residente {
+  margin: 0.5rem;
+}
+
+.input__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+//Ejemplo bucle y división
+$boton: 3;
+$i: 1;
+
+@for $i from 1 through $boton {
+  .b-form-#{$i} {
+    width: 9rem / $i;
+    height: 2rem;
+    margin: 0.2rem;
+    margin-top: 0.8rem;
+    outline: none;
+    color: white;
+    text-align: center;
+    background-color: $color-6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(151, 150, 150, 0.842);
+  }
+  .b-form-#{$i}:hover {
+    opacity: 0.9;
+  }
+}

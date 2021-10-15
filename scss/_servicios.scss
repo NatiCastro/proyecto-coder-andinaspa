@@ -1,0 +1,74 @@
+/* Servicios */
+
+$color-1: #a69c80;
+$color-2: #59310e;
+$color-3: #f2e3d5;
+$color-4: #262321;
+$color-5: #d9d5d2;
+$color-6: #d99d55;
+$color-7: #d9bfa0;
+$color-8: #8c6b4f;
+$color-9: #403429;
+
+// .title-servicios {
+//   margin: 3.5rem 0 0 0;
+//   padding: 0.6rem;
+//   text-align: center;
+//   color: white;
+//   font-weight: lighter;
+//   background-color: $color-8;
+//   animation-duration: 3s;
+//   animation-iteration-count: initial;
+//   animation-direction: normal;
+//   animation-name: aparecer2;
+//   letter-spacing: 0.2rem;
+// }
+.img-serv {
+  background-image: url(/imagenes/previaje.jpg);
+  width: 100%;
+  height: 650px;
+  margin-top: 3.5rem;
+  background-position: top;
+  background-attachment: fixed;
+  text-align: right;
+  padding-right: 2.5rem;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 3px 3px 3px $gris-claro;
+}
+
+.sm__text {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &--title {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    background-color: $color-8;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-name: aparecer2;
+  }
+  &--p {
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.container-ac {
+  margin: 1rem auto;
+}
+.accordion-button {
+  font-size: 1.3rem;
+  color: $color-4;
+  background-color: $color-3;
+}
