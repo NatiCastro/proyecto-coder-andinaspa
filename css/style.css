@@ -10695,7 +10695,6 @@ textarea.form-control-lg {
   height: 650px;
   margin-top: 3.5rem;
   background-position: top;
-  background-attachment: fixed;
 }
 
 .sm__text {
@@ -10708,7 +10707,6 @@ textarea.form-control-lg {
 }
 .sm__text--title {
   width: 100%;
-  font-size: 2rem;
   padding: 0.5rem;
   text-align: center;
   color: white;
@@ -10720,8 +10718,8 @@ textarea.form-control-lg {
   animation-name: aparecer2;
 }
 .sm__text--p {
-  margin: 1rem;
-  font-size: 1rem;
+  margin: 1rem 2rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
