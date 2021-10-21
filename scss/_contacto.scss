@@ -28,6 +28,7 @@ $color-9: #403429;
 .contact {
   margin: 1rem auto 0 auto;
   padding: 0.5rem;
+  width: auto;
   height: 15rem;
   opacity: 0.8;
   &__title {
@@ -68,13 +69,13 @@ $color-9: #403429;
     letter-spacing: 0.2rem;
   }
   &__fields {
-    width: 95%;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 2rem 2rem;
     padding: 1rem;
     border: 2px solid $color-7;
   }
@@ -122,8 +123,8 @@ $color-9: #403429;
     font-weight: lighter;
   }
   &__input--textarea {
-    width: 21rem;
-    height: 250px;
+    width: 16rem;
+    height: 200px;
     outline: none;
     border: 1.4px solid rgb(201, 196, 196);
     border-radius: 10px;

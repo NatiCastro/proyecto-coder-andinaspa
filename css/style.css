@@ -10690,11 +10690,18 @@ textarea.form-control-lg {
 }
 
 /* Servicios */
-.img-serv {
+.serv-mobile {
   width: 100%;
-  height: 650px;
-  margin-top: 3.5rem;
-  background-position: top;
+  height: auto;
+  margin-top: 1rem;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-serv {
+  display: none;
 }
 
 .sm__text {
@@ -10735,9 +10742,12 @@ textarea.form-control-lg {
 }
 
 /* Galeria1 */
+.container-galery {
+  margin-top: 4rem;
+}
+
 .card {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin: 0.5rem 1rem 1rem 1rem;
   border: none;
 }
 
@@ -10745,15 +10755,12 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
-.img-item {
-  height: 26rem;
-}
-
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .button-discover {
@@ -10869,6 +10876,7 @@ textarea.form-control-lg {
 .contact {
   margin: 1rem auto 0 auto;
   padding: 0.5rem;
+  width: auto;
   height: 15rem;
   opacity: 0.8;
 }
@@ -10908,13 +10916,13 @@ textarea.form-control-lg {
   letter-spacing: 0.2rem;
 }
 .form__fields {
-  width: 95%;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 2rem 2rem;
   padding: 1rem;
   border: 2px solid #d9bfa0;
 }
@@ -10961,8 +10969,8 @@ textarea.form-control-lg {
   font-weight: lighter;
 }
 .form__input--textarea {
-  width: 21rem;
-  height: 250px;
+  width: 16rem;
+  height: 200px;
   outline: none;
   border: 1.4px solid #c9c4c4;
   border-radius: 10px;
@@ -11111,9 +11119,9 @@ textarea.form-control-lg {
   background-color: #f2e3d5;
 }
 .footer__container--copyright h4, .footer__container--copyright .h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
   font-variant: small-caps;
   letter-spacing: 0.1rem;
 }
@@ -11124,14 +11132,18 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 600px) {
-  .contact__container {
-    background-image: url(/imagenes/imagenprincipal.jpg);
+  .serv-mobile {
+    display: none;
+  }
+
+  .img-serv {
     width: 100%;
-    height: 650px;
+    height: auto;
     margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .contact {
@@ -11320,9 +11332,16 @@ textarea.form-control-lg {
   .form__fields {
     border: none;
   }
+  .form__input--textarea {
+    width: 20rem;
+    height: 250px;
+    outline: none;
+    border: 1.4px solid #c9c4c4;
+    border-radius: 10px;
+  }
 
   .contact {
-    margin: 5rem auto 2rem auto;
+    margin: 6.5rem auto 6.5rem auto;
     padding: 0.5rem;
     height: 20rem;
     opacity: 0.8;
@@ -11351,6 +11370,28 @@ textarea.form-control-lg {
 @media (max-width: 360px) {
   .contact__grid {
     width: 360px;
+  }
+}
+@media (min-width: 600px) {
+  .contact__container {
+    background-image: url(/imagenes/mascara.jpg);
+    width: 100%;
+    height: auto;
+    margin-top: 3.5rem;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
+  .contact__container {
+    background-image: url(/imagenes/imagenprincipal.jpg);
+    width: 100%;
+    height: auto;
+    margin-top: 3.5rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 * {
