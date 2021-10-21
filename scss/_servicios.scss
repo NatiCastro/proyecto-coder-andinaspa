@@ -39,7 +39,7 @@ $color-9: #403429;
   }
   &--p {
     margin: 1rem 2rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 }
@@ -48,6 +48,7 @@ $color-9: #403429;
 }
 .accordion-button {
   font-size: 1.3rem;
+  font-variant: small-caps;
   color: $color-4;
   background-color: $color-3;
 }

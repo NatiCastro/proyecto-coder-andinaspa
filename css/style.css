@@ -10719,7 +10719,7 @@ textarea.form-control-lg {
 }
 .sm__text--p {
   margin: 1rem 2rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -10729,6 +10729,7 @@ textarea.form-control-lg {
 
 .accordion-button {
   font-size: 1.3rem;
+  font-variant: small-caps;
   color: #262321;
   background-color: #f2e3d5;
 }
@@ -10737,6 +10738,7 @@ textarea.form-control-lg {
 .card {
   margin-top: 5rem;
   margin-bottom: 2rem;
+  border: none;
 }
 
 .card-title {
@@ -10747,9 +10749,16 @@ textarea.form-control-lg {
   height: 26rem;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-discover {
   text-decoration: none;
-  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  padding: 0.3rem 2.5rem 0.3rem 2.5rem;
   background-color: #d99f6c;
   color: white;
   border-radius: 5px;
@@ -10784,7 +10793,7 @@ textarea.form-control-lg {
 }
 
 .ifr {
-  background-image: linear-gradient(to bottom right, #f5e6cc, #e2bf7e);
+  background-image: linear-gradient(to bottom right, rgba(255, 250, 241, 0.726), rgba(226, 191, 126, 0.671));
 }
 
 /* Premios */
@@ -10847,8 +10856,46 @@ textarea.form-control-lg {
   width: 14rem;
 }
 
+.contact__container {
+  background-image: url(/imagenes/duchas_edit.png);
+  width: 100%;
+  height: auto;
+  margin-top: 3.5rem;
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  margin: 1rem auto 0 auto;
+  padding: 0.5rem;
+  height: 15rem;
+  opacity: 0.8;
+}
+.contact__title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.contact__subtitle {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+.contact__text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.contact__link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem;
+  text-align: center;
+  color: #8c6b4f;
+}
+
 .form__title {
-  margin: 3.5rem 0 0 0;
+  width: 100%;
+  margin: 0;
   padding: 0.4rem;
   text-align: center;
   color: white;
@@ -10861,6 +10908,7 @@ textarea.form-control-lg {
   letter-spacing: 0.2rem;
 }
 .form__fields {
+  width: 95%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -10872,7 +10920,7 @@ textarea.form-control-lg {
 }
 .form__fields legend {
   color: #d99d55;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -11076,6 +11124,39 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 600px) {
+  .contact__container {
+    background-image: url(/imagenes/imagenprincipal.jpg);
+    width: 100%;
+    height: 650px;
+    margin-top: 3.5rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .contact {
+    margin: 0.5rem auto 0.5rem auto;
+    padding: 0.5rem;
+    height: 16rem;
+    opacity: 0.8;
+  }
+  .contact__subtitle {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+  }
+  .contact__text {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .contact__link {
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.3rem;
+    text-align: center;
+    color: #8c6b4f;
+  }
+
   .img__mobile {
     display: none;
   }
@@ -11156,11 +11237,6 @@ textarea.form-control-lg {
     margin-right: 2rem;
     font-size: 2rem;
   }
-
-  .copyright {
-    padding: 1rem;
-    font-size: 1rem;
-  }
 }
 @media (min-width: 990px) {
   .carousel-item img {
@@ -11232,11 +11308,51 @@ textarea.form-control-lg {
     transition: 0.3s;
     opacity: 1;
   }
-}
-.container-ac {
-  margin: 3rem auto;
-}
 
+  .container-ac {
+    margin: 3rem auto;
+  }
+
+  .footer__container--copyright h4, .footer__container--copyright .h4 {
+    font-size: 1.1rem;
+  }
+
+  .form__fields {
+    border: none;
+  }
+
+  .contact {
+    margin: 5rem auto 2rem auto;
+    padding: 0.5rem;
+    height: 20rem;
+    opacity: 0.8;
+  }
+  .contact__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  .contact__subtitle {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+  }
+  .contact__text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .contact__link {
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.3rem;
+    text-align: center;
+    color: #8c6b4f;
+  }
+}
+@media (max-width: 360px) {
+  .contact__grid {
+    width: 360px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

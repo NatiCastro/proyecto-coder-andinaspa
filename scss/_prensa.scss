@@ -36,7 +36,7 @@ $color-9: #403429;
   background-image: linear-gradient(to bottom right, $color-gr, $color-gr1);
 }
 .ifr {
-  @include gradient(rgb(245, 230, 204), rgb(226, 191, 126));
+  @include gradient(rgba(255, 250, 241, 0.726), rgba(226, 191, 126, 0.671));
 }
 
 /* Premios */
