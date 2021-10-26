@@ -32,7 +32,7 @@
     <header>
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="logo-a" href="#">Andina Spa</a>
+          <a class="logo-a" href="index.html">Andina Spa</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="fas fa-bars"></i></span>
           </button>
@@ -45,7 +45,7 @@
                 <a class="nav-a" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item"><i class="far fa-image"></i>
-                <a class="nav-a" href="galeria1.html">Galería</a>
+                <a class="nav-a" href="sitios.html">Sitios</a>
               </li>
               <li class="nav-item"><i class="fas fa-newspaper"></i>
                 <a class="nav-a" href="prensa.html">Prensa</a>
@@ -103,7 +103,7 @@
     <!-- Formulario de contacto-->
     <section class="form">
       <h1 class="form__title">Andina SPA | Contacto</h1>
-      <main>
+      <main class="form__container">
         <form action="https://formsubmit.co/castronatib@gmail.com" method="POST">
           <fieldset class="form__fields">
             <legend>Formulario de contacto</legend>
@@ -120,15 +120,15 @@
             <input class="form__input" type="email" name="email" id="email" /> <br />
             <label for="phone">Teléfono</label>
             <input class="form__input" type="tel" name="phone" id="phone" /> <br />
-            <div>Turista</div>
-            <input type="radio" name="residente" id="residente" value="Turista" />
-            <div>Residente</div>
+            <div class="form__tur-res">Turista
+            <input type="radio" name="residente" id="residente" value="Turista" /></div>
+            <div class="form__tur-res">Residente
             <input
               type="radio"
               name="residente"
               id="residente"
               value="Residente"
-            />
+            /></div>
             <br />
             <div class="form__title--sucursal">Elija sucursal</div>
             <select class="form__input--sucursal" name="sucursal" id="sucursal">
@@ -138,8 +138,8 @@
             </select>
             <br />
             <br />
-            <div class="form__text--politica">Acepto la política de privacidad</div>
-            <input type="checkbox" name="aceptar" id="aceptar" value="1" />
+            <div class="form__text--politica">Acepto la política de privacidad
+            <input type="checkbox" name="aceptar" id="aceptar" value="1" /></div>
             <br />
             <label for="mensaje">Tu mensaje</label><br />
             <textarea class="form__input--textarea"
@@ -157,6 +157,7 @@
           </div>
           </fieldset>
         </form>
+        <iframe class="form__ifr-contact" src="https://www.google.com/maps/d/u/0/embed?mid=1xlMlbspyZHXQ3U7P0XQONjsLIEmbrXLm" width="640" height="480"></iframe>
       </section>
       </main>
     <!-- Footer-->

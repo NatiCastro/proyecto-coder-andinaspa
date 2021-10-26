@@ -14,7 +14,27 @@ $gris-claro: rgb(95, 90, 90);
     align-items: center;
     background-position: bottom;
   }
+  .box {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    &__title {
+      font-size: 4rem;
+      text-align: center;
+      padding: 0 5rem;
+      margin-top: 2rem;
+    }
+    &__text {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0 5rem;
+    }
+    &__img {
+      width: 75%;
+    }
+  }
   .contact {
     margin: 0.5rem auto 0.5rem auto;
     padding: 0.5rem;
@@ -65,13 +85,13 @@ $gris-claro: rgb(95, 90, 90);
   }
   .article {
     &__title {
-      font-size: 2rem;
+      font-size: 2.4rem;
       padding: 0.4rem;
       text-align: center;
       color: white;
       font-weight: lighter;
       background-color: $color-8;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-iteration-count: initial;
       animation-direction: normal;
       animation-name: aparecer2;
@@ -99,9 +119,10 @@ $gris-claro: rgb(95, 90, 90);
     .article__#{$titles}--title {
       color: $color-8;
       padding: 0.1rem;
+      margin-top: 2rem;
       margin-left: 0.2rem;
       text-transform: uppercase;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   }
   .footer__links {
@@ -116,6 +137,9 @@ $gris-claro: rgb(95, 90, 90);
     width: 100%;
     height: auto;
   }
+  // .carousel-caption {
+  //   padding-bottom: 10rem;
+  // }
   .title__carousel {
     font-size: 7rem;
     color: white;
@@ -133,16 +157,16 @@ $gris-claro: rgb(95, 90, 90);
   }
   .navbar {
     background-color: rgb(65, 63, 63);
-    height: 3.5rem;
+    height: auto;
   }
   .navbar-nav {
     background-color: rgb(65, 63, 63);
     height: auto;
     margin: 0;
-    padding-top: 0;
-  }
-  .nav-item {
-    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
   }
   .nav-item i {
     display: none;
@@ -151,14 +175,13 @@ $gris-claro: rgb(95, 90, 90);
     text-decoration: none;
     margin-right: 1.3rem;
     color: #e9dfcd;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 520;
   }
   .nav-a {
     text-decoration: none;
     color: #e9dfcd;
     font-size: 1rem;
-    margin-right: 1.3rem;
   }
   .logo-a:hover {
     color: $color-6;
@@ -173,12 +196,57 @@ $gris-claro: rgb(95, 90, 90);
   .container-ac {
     margin: 3rem auto;
   }
+  .box {
+    margin: 4rem 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    &__saborea {
+      flex-direction: row-reverse;
+    }
+
+    &__title {
+      font-size: 6rem;
+      font-weight: lighter;
+      text-align: center;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-name: aparecer1;
+    }
+    @keyframes aparecer1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    &__text {
+      font-size: 1rem;
+      text-align: center;
+      padding: 1rem 3rem;
+    }
+    &__img {
+      width: 75%;
+    }
+  }
   .footer__container--copyright h4 {
     font-size: 1.1rem;
   }
   .form {
-    &__fields {
-      border: none;
+    &__container {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: initial;
+    }
+    &__ifr-contact {
+      width: 50%;
+      height: auto;
+      margin: 1rem 1rem 1rem 4rem;
     }
     &__input--textarea {
       width: 20rem;

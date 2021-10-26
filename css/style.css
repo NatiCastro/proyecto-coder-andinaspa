@@ -10629,13 +10629,29 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
-.second-image {
-  width: 100%;
-  margin-top: 1.5rem;
+.box {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.box__title {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.box__text {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+.box__img {
+  width: 85%;
 }
 
 .article__title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 0.4rem;
   text-align: center;
   color: white;
@@ -10657,7 +10673,7 @@ textarea.form-control-lg {
 .article__first--text {
   padding: 0.3rem;
   line-height: 1.5rem;
-  text-align: center;
+  text-align: left;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 0.5rem;
@@ -10665,7 +10681,7 @@ textarea.form-control-lg {
 .article__second--text {
   padding: 0.3rem;
   line-height: 1.5rem;
-  text-align: center;
+  text-align: left;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 0.5rem;
@@ -10725,8 +10741,9 @@ textarea.form-control-lg {
   animation-name: aparecer2;
 }
 .sm__text--p {
+  width: 80%;
   margin: 1rem 2rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -10826,6 +10843,7 @@ textarea.form-control-lg {
   justify-content: center;
 }
 .premios__info--text {
+  width: 80%;
   padding-top: 1.8rem;
   color: #292727;
   font-variant: small-caps;
@@ -10867,7 +10885,7 @@ textarea.form-control-lg {
   background-image: url(/imagenes/duchas_edit.png);
   width: 100%;
   height: auto;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   background-position: right;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -10915,16 +10933,21 @@ textarea.form-control-lg {
   animation-name: aparecer2;
   letter-spacing: 0.2rem;
 }
+.form__container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .form__fields {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 1rem;
-  border: 2px solid #d9bfa0;
 }
 .form__fields legend {
   color: #d99d55;
@@ -10945,13 +10968,12 @@ textarea.form-control-lg {
   outline: none;
   border-radius: 5px;
   border: 1.4px solid #c9c4c4;
-  transition: all 1s;
 }
 .form__input:focus, .form__input--sucursal:focus {
-  width: 300px;
-  height: 40px;
-  font-size: 1.2rem;
-  border: 1.6px solid #d99d55;
+  border: 2px solid #d99d55;
+}
+.form__tur-res {
+  padding-top: 1rem;
 }
 .form__title--sucursal {
   margin: 0.5rem;
@@ -10975,9 +10997,9 @@ textarea.form-control-lg {
   border: 1.4px solid #c9c4c4;
   border-radius: 10px;
 }
-
-#residente {
-  margin: 0.5rem;
+.form__ifr-contact {
+  width: 80%;
+  margin: 1rem auto;
 }
 
 .input__form {
@@ -11146,6 +11168,27 @@ textarea.form-control-lg {
     background-position: bottom;
   }
 
+  .box {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box__title {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 5rem;
+    margin-top: 2rem;
+  }
+  .box__text {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 5rem;
+  }
+  .box__img {
+    width: 75%;
+  }
+
   .contact {
     margin: 0.5rem auto 0.5rem auto;
     padding: 0.5rem;
@@ -11201,13 +11244,13 @@ textarea.form-control-lg {
   }
 
   .article__title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding: 0.4rem;
     text-align: center;
     color: white;
     font-weight: lighter;
     background-color: #8c6b4f;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: initial;
     animation-direction: normal;
     animation-name: aparecer2;
@@ -11232,17 +11275,19 @@ textarea.form-control-lg {
   .article__first--title {
     color: #8c6b4f;
     padding: 0.1rem;
+    margin-top: 2rem;
     margin-left: 0.2rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .article__second--title {
     color: #8c6b4f;
     padding: 0.1rem;
+    margin-top: 2rem;
     margin-left: 0.2rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .footer__links {
@@ -11276,18 +11321,17 @@ textarea.form-control-lg {
 
   .navbar {
     background-color: #413f3f;
-    height: 3.5rem;
+    height: auto;
   }
 
   .navbar-nav {
     background-color: #413f3f;
     height: auto;
     margin: 0;
-    padding-top: 0;
-  }
-
-  .nav-item {
-    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
   }
 
   .nav-item i {
@@ -11298,7 +11342,7 @@ textarea.form-control-lg {
     text-decoration: none;
     margin-right: 1.3rem;
     color: #e9dfcd;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 520;
   }
 
@@ -11306,7 +11350,6 @@ textarea.form-control-lg {
     text-decoration: none;
     color: #e9dfcd;
     font-size: 1rem;
-    margin-right: 1.3rem;
   }
 
   .logo-a:hover {
@@ -11325,12 +11368,57 @@ textarea.form-control-lg {
     margin: 3rem auto;
   }
 
+  .box {
+    margin: 4rem 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .box__saborea {
+    flex-direction: row-reverse;
+  }
+  .box__title {
+    font-size: 6rem;
+    font-weight: lighter;
+    text-align: center;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-name: aparecer1;
+  }
+  @keyframes aparecer1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .box__text {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 3rem;
+  }
+  .box__img {
+    width: 75%;
+  }
+
   .footer__container--copyright h4, .footer__container--copyright .h4 {
     font-size: 1.1rem;
   }
 
-  .form__fields {
-    border: none;
+  .form__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: initial;
+  }
+  .form__ifr-contact {
+    width: 50%;
+    height: auto;
+    margin: 1rem 1rem 1rem 4rem;
   }
   .form__input--textarea {
     width: 20rem;

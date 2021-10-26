@@ -23,14 +23,31 @@ $gris-claro: rgb(95, 90, 90);
   justify-content: center;
 }
 
-.second-image {
-  width: 100%;
-  margin-top: 1.5rem;
+.box {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  &__text {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 3rem;
+  }
+  &__img {
+    width: 85%;
+  }
 }
 
 .article {
   &__title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.4rem;
     text-align: center;
     color: white;
@@ -52,7 +69,7 @@ $gris-claro: rgb(95, 90, 90);
   &__first--text {
     padding: 0.3rem;
     line-height: 1.5rem;
-    text-align: center;
+    text-align: left;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 0.5rem;
@@ -61,7 +78,7 @@ $gris-claro: rgb(95, 90, 90);
   &__second--text {
     padding: 0.3rem;
     line-height: 1.5rem;
-    text-align: center;
+    text-align: left;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 0.5rem;
