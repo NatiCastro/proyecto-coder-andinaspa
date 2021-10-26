@@ -10882,7 +10882,7 @@ textarea.form-control-lg {
 }
 
 .contact__container {
-  background-image: url(imagenes/duchas_edit.png);
+  background-image: url(../imagenes/duchas_edit.png);
   width: 100%;
   height: auto;
   margin-top: 3.5rem;
@@ -11462,7 +11462,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 600px) {
   .contact__container {
-    background-image: url(imagenes/mascara.jpg);
+    background-image: url(../imagenes/mascara.jpg);
     width: 100%;
     height: auto;
     margin-top: 3.5rem;
@@ -11473,7 +11473,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .contact__container {
-    background-image: url(imagenes/imagenprincipal.jpg);
+    background-image: url(../imagenes/imagenprincipal.jpg);
     width: 100%;
     height: auto;
     margin-top: 3.5rem;
