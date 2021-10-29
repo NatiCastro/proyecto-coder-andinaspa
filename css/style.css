@@ -10637,6 +10637,7 @@ textarea.form-control-lg {
   align-items: center;
 }
 .box__title {
+  font-family: "Cinzel", serif;
   margin-top: 2rem;
   font-size: 3rem;
   text-align: center;
@@ -10688,21 +10689,23 @@ textarea.form-control-lg {
 }
 
 .article__first--title {
+  font-family: "Cinzel", serif;
   color: #8c6b4f;
   padding: 0.2rem;
   margin-top: 1.5rem;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .article__second--title {
+  font-family: "Cinzel", serif;
   color: #8c6b4f;
   padding: 0.2rem;
   margin-top: 1.5rem;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* Servicios */
@@ -10753,14 +10756,14 @@ textarea.form-control-lg {
 
 .accordion-button {
   font-size: 1.3rem;
-  font-variant: small-caps;
-  color: #262321;
+  font-family: "Cinzel", serif;
+  color: black;
   background-color: #f2e3d5;
 }
 
 /* Galeria1 */
 .container-galery {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
 }
 
 .card {
@@ -10769,6 +10772,7 @@ textarea.form-control-lg {
 }
 
 .card-title {
+  font-family: "Cinzel", serif;
   font-size: 2rem;
 }
 
@@ -11089,7 +11093,8 @@ textarea.form-control-lg {
   text-decoration: none;
   margin-left: 1rem;
   color: #f2e3d5;
-  font-size: 1.4rem;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
   font-weight: 520;
 }
 
@@ -11227,10 +11232,12 @@ textarea.form-control-lg {
   }
 
   .title__carousel {
+    font-family: "Cinzel", serif;
     font-size: 4rem;
     color: #f2e3d5;
   }
   .title__carousel--b {
+    font-family: "Cinzel", serif;
     font-size: 4em;
     color: #363232;
   }
@@ -11303,10 +11310,12 @@ textarea.form-control-lg {
   }
 
   .title__carousel {
+    font-family: "Cinzel", serif;
     font-size: 7rem;
     color: white;
   }
   .title__carousel--b {
+    font-family: "Cinzel", serif;
     font-size: 7em;
     color: #363232;
   }
@@ -11342,8 +11351,8 @@ textarea.form-control-lg {
     text-decoration: none;
     margin-right: 1.3rem;
     color: #e9dfcd;
+    font-family: "Cinzel", serif;
     font-size: 1.5rem;
-    font-weight: 520;
   }
 
   .nav-a {
@@ -11401,7 +11410,7 @@ textarea.form-control-lg {
     padding: 1rem 3rem;
   }
   .box__img {
-    width: 75%;
+    width: 65%;
   }
 
   .footer__container--copyright h4, .footer__container--copyright .h4 {

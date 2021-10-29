@@ -31,6 +31,7 @@ $gris-claro: rgb(95, 90, 90);
   align-items: center;
 
   &__title {
+    font-family: "Cinzel", serif;
     margin-top: 2rem;
     font-size: 3rem;
     text-align: center;
@@ -88,11 +89,12 @@ $gris-claro: rgb(95, 90, 90);
 //Ejemplo de each
 @each $titles in first, second {
   .article__#{$titles}--title {
+    font-family: "Cinzel", serif;
     color: $color-8;
     padding: 0.2rem;
     margin-top: 1.5rem;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
