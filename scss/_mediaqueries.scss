@@ -283,6 +283,9 @@ $gris-claro: rgb(95, 90, 90);
       color: $color-8;
     }
   }
+  .grid-container {
+    margin-top: 4.5rem;
+  }
 }
 @media (max-width: 360px) {
   .contact__grid {
