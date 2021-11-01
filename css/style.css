@@ -11622,4 +11622,9 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+.error__title {
+  padding: 2rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
